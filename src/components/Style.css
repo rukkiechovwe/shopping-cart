@@ -1,0 +1,124 @@
+button{
+	outline: none;
+	transition:all .4s linear;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+}
+.row{
+	display: flex;
+	flex-direction: row;
+}
+.col{
+	display: flex;
+	flex-direction: column;
+}
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	background-color: crimson;
+	color: white;
+}
+nav > ul {
+	display: flex;
+	list-style: none;
+	align-items: center;
+	padding: 0;
+}
+nav > ul > li {
+	margin: 0 20px;
+}
+
+.cart-con{
+	align-items: center;
+}
+.cart-div{
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	font-size: 16px;
+}
+.cart-div > div{
+	padding: 20px;
+    border: 2px solid #dc143c;
+    border-radius: 7px;
+	margin: 20px 10px;
+	align-items: flex-end;
+	width: 280px;
+	text-align: right;
+}
+.cart-div > div > span{
+	margin-bottom: 12px;
+}
+.q-btn{
+	justify-content: flex-start;
+	margin-bottom: 10px;
+}
+.q-btn button{
+	border: 2px solid #dc143c;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	color: #dc143c;
+	margin-right: 7px;
+	font-size: 18px;
+}
+.q-btn button:last-child{
+	margin-right: 0;
+}
+.name{
+	font-size: 20px;
+	font-weight: 600;
+}
+.price{
+	font-size: 18px;
+	font-weight: 600;
+}
+.cart-component-div{
+	align-items: center;
+	width: 100%;
+	font-size: 16px;
+}
+.cart-component-div > div{
+	justify-content: space-between;
+	width: 85%;
+	padding: 20px;
+    border: 2px solid #dc143c;
+    border-radius: 7px;
+	margin: 20px 10px;
+	align-items: center;
+}
+.cart-text > span{
+	margin:0 12px;
+}
+.cart-text{
+	justify-content: space-around;
+    width: 80%;
+}
+@media only screen and (max-width:600px){
+	.cart-text{flex-direction: column; width: 100%; align-items: flex-start;}
+	.cart-component-div > div{width: 300px; flex-direction: column; align-items: flex-start;}
+	.cart-text > span{margin: 7px 0;}
+}
+@media only screen and (max-width:360px){
+	.cart-component-div > div{width: 250px;}
+}
+.cart-component-div > div > button{
+	border: 0;
+	background-color: #dc143c;
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: #fff;
+}
+.clear-all{
+	padding:6px 20px;
+	border: 2px solid #dc143c;
+	background-color: transparent;
+	margin: 20px 0;
+}
+.clear-all:hover{
+	background-color: #dc143c;
+	color: #fff;
+}
